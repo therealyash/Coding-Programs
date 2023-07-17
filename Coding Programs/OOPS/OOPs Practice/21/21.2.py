@@ -10,10 +10,10 @@ these prime numbers
 
 def isPrime(n):
     # number divided by itself
-    if n>1:
-        if n==2:
+    if n > 1:
+        if n == 2:
             return True
-        if n%2 == 0:
+        if n % 2 == 0:
             return False
         for i in range(2, n//2):
             if n % i == 0:
@@ -33,13 +33,9 @@ def generatePrimes():
 
 total = 0
 for next_prime in generatePrimes():
-    if next_prime <
-
-
-
-
-gen = (i for i in range(3000000))
-
-print(sum(gen))
-
+    if next_prime < 300000:
+        total += next_prime
+    else:
+        print(total)
+        exit()
 
